@@ -41,7 +41,7 @@ export default function Hero() {
 
         <div className={styles.right}>
           <div className={styles.imgWrap}>
-            <img src={`/profile.png`} alt="Peter Chua" className={styles.img} />
+            <img src={`${import.meta.env.BASE_URL}/profile.png`} alt="Peter Chua" className={styles.img} />
             <div className={styles.imgRing} />
             <div className={styles.badge}>
               <span className={styles.badgeLabel}>Based in</span>
