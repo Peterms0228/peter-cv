@@ -1,0 +1,134 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 4rem;
+  transition: all 0.4s ease;
+}
+
+.scrolled {
+  background: rgba(247, 246, 242, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 4rem;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+}
+
+.logoText { color: var(--text); }
+.logoDot { color: var(--accent); }
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.2s;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.link:hover { color: var(--accent); }
+.link:hover::after { width: 100%; }
+
+.ctaBtn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.45rem 1.1rem;
+  border-radius: 2px;
+  transition: all 0.25s;
+}
+
+.ctaBtn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bar {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--text-muted);
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+.barOpen {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+  transform: translateY(7px) rotate(45deg);
+  transition: all 0.3s;
+}
+
+.barHide {
+  display: block;
+  width: 0; height: 2px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.barOpenR {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+  transform: translateY(-7px) rotate(-45deg);
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 1.2rem 1.5rem; }
+  .scrolled { padding: 1rem 1.5rem; }
+  .hamburger { display: flex; }
+  .links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 70vw; height: 100vh;
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    transition: right 0.4s ease;
+  }
+  .links.open { right: 0; }
+  .link { font-size: 0.95rem; }
+}
