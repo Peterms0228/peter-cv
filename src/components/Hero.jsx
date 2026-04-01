@@ -44,8 +44,11 @@ export default function Hero() {
             <img src={`${import.meta.env.BASE_URL}/profile.png`} alt="Peter Chua" className={styles.img} />
             <div className={styles.imgRing} />
             <div className={styles.badge}>
-              <span className={styles.badgeLabel}>Based in</span>
-              <span className={styles.badgeVal}>Selangor, MY</span>
+              {/* <span >Based in</span> */}
+              {/* <span className={styles.badgeVal}>Selangor, MY</span> */}
+              <a className={styles.badgeButton} href={`${import.meta.env.BASE_URL}/cv.pdf`}  download="CV_PeterChuaMengSin.pdf">
+                  📄 Download My CV
+              </a>
             </div>
           </div>
         </div>

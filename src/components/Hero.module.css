@@ -233,19 +233,12 @@
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-.badgeLabel {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-}
-
-.badgeVal {
+.badgeButton {
   font-size: 0.85rem;
   font-weight: 500;
   color: var(--text);
 }
+.badgeButton:hover { color: var(--accent); }
 
 .scrollHint {
   position: absolute;

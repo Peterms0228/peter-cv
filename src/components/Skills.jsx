@@ -3,7 +3,7 @@ import styles from './Skills.module.css';
 const skillGroups = [
   {
     category: 'Languages',
-    icon: '{ }',
+    icon: '{}',
     skills: ['Java', 'SQL', 'JavaScript'],
   },
   {

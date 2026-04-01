@@ -20,18 +20,17 @@ export default function About() {
           <div className={styles.text}>
             <p>
               I'm a Software Engineer based in Selangor, Malaysia, with a passion for building
-              reliable backend systems. I thrive at the intersection of modern microservices
-              architecture and battle-tested legacy systems — bridging the gap so teams can
-              move fast without breaking things.
+              reliable systems. I thrive at the intersection of modern microservices architecture 
+              and large-scale legacy systems. 
             </p>
             <p>
               My experience spans from greenfield Spring Boot microservices at ATOZ Software Tech
-              to maintaining mission-critical enterprise applications at Hitachi eBworx. I believe
-              good software is invisible — it just works.
+              to maintaining mission-critical enterprise applications at Hitachi eBworx. I demonstrate 
+              strong teamwork and collaboration in my work environment.
             </p>
             <p>
-              When I'm not optimising database queries or untangling SOAP APIs, I'm exploring
-              new tools and patterns that make backend systems more resilient and maintainable.
+              I love exploring new technologies and tools that make software systems more resilient 
+              and maintainable.
             </p>
             <div className={styles.contact}>
               <a href="mailto:chuams0228@gmail.com" className={styles.contactItem}>
